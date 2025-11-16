@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'DM Sans Italic';
+    src: url('./assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-family: 'DM Sans';
+    src: url('./assets/fonts/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 7%);
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bento-grid {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 32px;
+    margin: 40px auto;
+}
+
+.card {
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-social {
+    grid-area: 1 / 2 / 3 / 4;
+    background-color: hsl(256, 67%, 59%); 
+    color: hsl(0, 0%, 100%); 
+    text-align: center;
+    padding: 48px 32px;
+}
+
+.card-social h1 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.card-social h1 .highlight {
+    color: hsl(39, 100%, 71%); 
+}
+
+.card-social .reviews {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card-social img {
+    width: 220px;
+    margin: 24px auto 12px;
+}
+
+.card-platforms {
+    grid-area: 3 / 2 / 5 / 3; 
+    background-color: hsl(0, 0%, 100%); 
+    padding: 24px;
+}
+
+.card-platforms img {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.card-platforms h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.card-schedule {
+    grid-area: 3 / 3 / 5 / 4;
+    background-color: hsl(39, 100%, 71%); 
+    padding: 24px;
+}
+
+.card-schedule img {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.card-schedule h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.card-schedule-social {
+    grid-area: 1 / 4 / 5 / 5;
+    background-color: hsl(254, 88%, 90%); 
+    padding: 24px;
+}
+
+.card-schedule-social h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.card-schedule-social img {
+    width: 100%;
+    flex-grow: 1;
+    margin: 16px 0;
+    border-radius: 8px;
+}
+
+.card-schedule-social p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.card-create {
+    grid-area: 1 / 1 / 4 / 2;
+    background-color: hsl(31, 66%, 93%);
+    padding: 32px 24px;;
+    font-weight: 500;
+}
+
+.card-create h2 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.card-create h2 .highlight {
+    color: hsl(256, 67%, 59%); 
+    font-style: italic;
+}
+
+.card-create img {
+    width: 200px;
+    margin: 24px auto;
+}
+
+.card-ai {
+    grid-area: 4 / 1 / 7 / 2;
+    background-color: hsl(39, 100%, 71%); 
+    padding: 24px;
+}
+
+.card-ai h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.card-ai img {
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 8px;
+}
+
+.card-growth {
+    grid-area: 5 / 2 / 7 / 3;
+    background-color: hsl(0, 0%, 100%);
+    padding: 24px;
+    text-align: center;
+}
+
+.card-growth h2 {
+    font-size: 64px;
+    font-weight: 500;
+    margin: 16px 0;
+}
+
+.card-growth p {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.card-growth img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 0;
+    
+}
+
+.card-followers {
+    grid-area: 5 / 3 / 7 / 5;
+    background-color: hsl(256, 67%, 59%); /* Purple 500 */
+    color: hsl(0, 0%, 100%); /* White */
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.card-followers img {
+    width: 100%;
+    max-width: 250px;
+    margin: 16px 0;
+}
+
+.card-followers h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 32px;
+    color: hsl(0, 0%, 7%);
+}
+
+.attribution a {
+    color: hsl(256, 67%, 59%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    .card-social {
+        grid-area: 1;
+        text-align: center;
+    }
+
+    .card-platforms {
+        grid-area: auto;
+    }
+
+    .card-schedule {
+        grid-area: 3;
+    }
+
+    .card-schedule-social {
+        grid-area: 4;
+    }
+
+    .card-create {
+        grid-area: 7;
+    }
+
+    .card-ai {
+        grid-area: 8;
+    }
+
+    .card-growth {
+        grid-area: 6;
+    }
+
+    .card-followers {
+        grid-area: 5;
+        flex-direction: column;
+        text-align: center;
+    }
+}
