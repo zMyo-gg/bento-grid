@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/zMyo-gg/bento-grid](https://github.com/zMyo-gg/bento-grid)
+- Live Site URL: [https://zmyo-gg.github.io/bento-grid/](https://zmyo-gg.github.io/bento-grid/)
 
 ## My process
 
