@@ -25,13 +25,11 @@ body {
 }
 
 .bento-grid {
-    max-width: 1200px;
-    width: 100%;
+    width: min(90%, 1400px);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 32px;
-    margin: 40px auto;
 }
 
 .card {
@@ -99,6 +97,7 @@ body {
     width: 100%;
     margin-bottom: 16px;
     border-radius: 8px;
+    
 }
 
 .card-schedule h2 {
@@ -122,7 +121,7 @@ body {
 
 .card-schedule-social img {
     width: 100%;
-    flex-grow: 1;
+    flex-grow: 0.8;
     margin: 16px 0;
     border-radius: 8px;
 }
@@ -241,12 +240,13 @@ body {
 
 @media (max-width: 768px) {
     .bento-grid {
+        max-height: none;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1, 1fr);
     }
 
     .card {
-        padding: 24px;
+        margin: 40px auto;
     }
 
     .card-social {
